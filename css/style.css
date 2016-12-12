@@ -1,0 +1,124 @@
+/*------------------css reset-----------------*/
+*{
+padding:0;
+margin: 0;
+font-family:100%;
+line-height:1em;
+}
+
+/*-----------------type-------------------------*/
+body{overflow-x: hidden;
+}
+.nav{ position: fixed; text-align: center;
+    left: 0;
+right: 0;
+    top: 0;
+margin: auto;
+z-index: 4; background-color: aliceblue;
+display: flex;
+    flex-wrap: wrap;
+justify-content: center;}
+
+li { 
+
+list-style-type: none;
+    font:rgba(246, 198, 250, 100);
+    font-size: 1.5em;
+    text-decoration: none!important;
+    list-style: none;
+}
+
+.nav li:hover{background-color: purple;}
+article{margin: auto;}
+article h1{width: 70%;
+margin: auto;
+line-height: 1.2em;}
+article h2{width: 70%;
+margin: auto}
+article h3{width: 70%;margin: auto}
+article h4{width: 70%;margin: auto}
+article p{width: 70%;
+margin: auto;}
+
+h1{text-align: center;
+    margin: auto;
+font-size: 8em;
+    font-family: 'didot';
+    margin-top:1em;
+    width: 85%;
+   
+    
+}
+
+h2{font-size: 2.0em; text-align: center;
+padding: 1em}
+
+p{font-size: 1.5em;
+line-height: 1.2em;
+padding-top: 1.5em;
+padding-bottom: 1.5em;
+    width: 30%;
+    margin: auto;
+}
+small p{font-size: 1em;
+line-height: 1.2em; 
+padding-top: 1.5em;
+padding-bottom: 1.5em;
+    width: 70%;
+    margin: auto;
+}
+footer p{ font-size: .8em;
+padding: 1.5em;
+color: white;
+background-color: darkgray;
+margin-top:1em;
+position: absolute;
+bottom: 100;}
+
+blockquote { font-family: 'didot';
+width: 60%;
+margin: auto;
+text-transform: uppercase;
+font-size: 2em;
+    line-height: 1.3em;
+text-align: center;}
+blockquote p{padding: 0;
+}
+
+cite {margin: auto;}
+article ul{width:70%;
+margin: auto;
+padding: 1em;}
+li{padding: 1em;}
+
+hr{width: 75%;
+margin: auto;
+margin-top: 1em;
+margin-bottom: 1em;}
+
+.underline{text-decoration: underline;
+  -webkit-text-decoration-color: #E18728;
+    text-decoration-color: #E18728; }
+
+.container{margin: auto;
+    max-width: 750px;
+  ;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: flex-start;
+}
+    .column{width:50%;
+}
+.column2{width:50%;
+}
+
+
+/*-----------images----------------*/
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
