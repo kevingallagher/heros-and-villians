@@ -2,38 +2,96 @@
 <html>
 	<head>
 		<title>Sherlock</title>
-        <link href="css/style.css" media="all" type="text/css" rel="stylesheet" />
+        <link href="css/style2.css" media="all" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"elementType":"labels","stylers":[{"visibility":"off"}]},{"elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#000000"}]},{"featureType":"landscape","stylers":[{"color":"#ffffff"},{"visibility":"on"}]},{}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        </script>
+        
 	</head>
     <body>
         <ul class="nav">
         
-            <li>Sherlock Holmes</li>
-            <li>Dr Watson</li>
-            <li>Moriarty</li>
-            <li>Irene Adler</li>
-            <li>Silver Screen</li>
+           <li> <a href="#">Sherlock Holmes</a></li>
+            <li><a href="#">Dr Watson</a></li>
+           <li><a href="#"> Moriarty</a></li>
+            <li><a href="#">Irene Adler</a></li>
+            <li><a href="#">Silver Screen</a></li>
         
         </ul>
         
-        
+        <div class="header"></div>
+        <img class="london"  src="sherlockpic/london.png"/>
           <h1>Heroes and Villians</h1>
-              <h2>221B Baker Street</h2>
-		<hr>
-        <p>Sir Arthur Conan Doyle's celebrated Holme's characters have lived a life beyond the printed page. Recent adaptations, brought to life on the silver screen, include Benedict Cumberbatch and Martin Freeman's portrayal in <a href= "https://en.wikipedia.org/wiki/Sherlock_(TV_series)">Sherlock</a>, and &#45; more recently &#45; Sir Ian McKellen's portrayal in <a href= "https://en.wikipedia.org/wiki/Mr._Holmes">Mr Holmes.</a></p>
+          <img class="background" src="sherlockpic/oldnews.png"/>
+        <img class="background" src="sherlockpic/oldnews.png"/>
+        <h1 class="sub">221B Baker Street</h1>
+		<div class="flex">
+            
+                     <blockquote>"Conan Doyle's writings lives on from generation to generation. As Scott Monty puts it:
+Every generation or so some kind of cycle happens, some big book or movie begins to start the process and then others seem to follow up,"
+
+
+            </blockquote>
+           
+            
+        <p class="intro">Sir Arthur Conan Doyle's celebrated Holme's characters have lived a life beyond the printed page. Recent adaptations, brought to life on the silver screen, include Benedict Cumberbatch and Martin Freeman's portrayal in <a href= "https://en.wikipedia.org/wiki/Sherlock_(TV_series)">Sherlock</a>, and &#45; more recently &#45; Sir Ian McKellen's portrayal in <a href= "https://en.wikipedia.org/wiki/Mr._Holmes">Mr Holmes.</a></p>
         
-              <blockquote>"Conan Doyle's writings lives on from generation to generation. As Scott Monty puts it:
-Every generation or so some kind of cycle happens, some big book or movie begins to start the process and then others seem to follow up,"</blockquote>
-               <cite>- Scott Monty a member of the Sherlock Holmes Enthusiast Group 'Baker Street Irregulars'</cite>
-<hr>
-    <small><p>This little web site is a homage to the Holmes' story and was created as a piece of coursework for the [BDes (Hons) Interaction Design] programme at the Belfast School of Art. <br/>
-        Standing on the shoulders of giants we are indebted to Ethan Marcotte who kindly granted his permission to develop his original site, designed for A List Apart way back in 2010 when Marcotte coined the term <a href= "http://alistapart.com/article/responsive-web-design">Responsive Web Design</a>.</p></small>
-    <hr>
+     
+            
+            </div>
+
+        <img class="sher" src="sherlockpic/sher.png"/>
+        
+  <img class="wat" src="sherlockpic/wat.png"/>
+        
+        <img class="lady" src="sherlockpic/lady.png"/>
+        
+        
+        
+        
+        
+   <div class="content">
 <h2>Sherlock Holmes</h2>
     <p>Sherlock Holmes is a fictional private detective created by British author Sir Arthur Conan Doyle. Known as a "consulting detective" in the stories, Holmes is known for a proficiency with observation, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard. Amongst other foibles, Holmes had a penchant for papier mach&eacute;.<br/>
 First appearing in print in 1887 (in A Study in Scarlet), the character's popularity became widespread with the first series of short stories in The Strand Magazine, beginning with "A Scandal in Bohemia" in 1891; additional tales appeared from then to 1927, eventually totalling four novels and 56 short stories.
 All but one are set in the Victorian or Edwardian periods, taking place between about 1880 to 1914. Most are narrated by the character of Holmes's friend and biographer Dr. Watson, who usually accompanies Holmes during his investigations and often shares quarters with him at the address of 221B Baker Street, London, where many of the stories begin.</p>
 
 <h2>Dr Watson</h2>
+      
+       
     <p>Dr John H. Watson is a medical doctor, formerly in the British Army. He was married to Mary Watson and is arguably the only friend and confidant of Sherlock Holmes.
     In the debut Holmes story A Study in Scarlet, Watson, as the narrator, describes meeting Holmes, their subsequent sharing of rooms at 221B Baker Street, his attempts to discover the profession of his taciturn companion, Holmes's eventual taking of Watson into his confidence, and the events surrounding their first case together. Watson describes Holmes and his methods in too romantic and sentimental a manner for Holmes' taste. In time, they become close friends. 
         <br/>In The Sign of Four, John Watson met Mary Morstan, who became his wife. Mary seemed somewhat less sure of her husband, however, absentmindedly calling him "James" in the short story "The Man with the Twisted Lip". This may be a simple typographical error, though some have speculated that it is a wifely reference to Watson's unknown middle name, which could have been "Hamish" (Scottish for "James") Dorothy Sayers, creator of the detective Lord Peter Wimsey, also wrote several essays on Holmesian speculation, later published this theory in Unpopular Opinions.</p>
@@ -53,8 +111,22 @@ All but one are set in the Victorian or Edwardian periods, taking place between 
 <h2>Adaptations on the Silver Screen</h2>
  
     <p>Sir Arthur Conan Doyle's celebrated Holme's characters have lived a life beyond the printed page. Recent adaptations, brought to life on the silver screen, include Benedict Cumberbatch and Martin Freeman's portrayal in <a href= "https://en.wikipedia.org/wiki/Sherlock_(TV_series)">Sherlock</a>, and &#45; more recently &#45; Sir Ian McKellen's portrayal in <a href= "https://en.wikipedia.org/wiki/Mr._Holmes">Mr Holmes.</a></p>
-<hr>
-<footer><small>The content on this page draws on copy from Wikipedia. This has been reworked to incorporate a comprehensive set of HTML5 elements to ensure semantics is full explored.
+
+        
+   
+        </div>
+    
+         <div class="map map-container">
+   <div class="overlay" onClick="style.pointerEvents='none'"></div>
+        
+  <h2><a href="https://snazzymaps.com/style/95/roadie" target="_blank"></a></h2>
+
+        <!-- The element that will contain our Google Map. This is used in both the Javascript and CSS above. -->
+        <div id="map"></div>
+    </div>
+<footer>   <small><p>This little web site is a homage to the Holmes' story and was created as a piece of coursework for the [BDes (Hons) Interaction Design] programme at the Belfast School of Art. <br/>
+        Standing on the shoulders of giants we are indebted to Ethan Marcotte who kindly granted his permission to develop his original site, designed for A List Apart way back in 2010 when Marcotte coined the term <a href= "http://alistapart.com/article/responsive-web-design">Responsive Web Design</a>.</p></small>
+    <small>The content on this page draws on copy from Wikipedia. This has been reworked to incorporate a comprehensive set of HTML5 elements to ensure semantics is full explored.
 Copyright (C) 2016, Christopher Murphy, #ixdbelfast</small></footer>
     
 </body>
